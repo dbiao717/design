@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>gibbs_index</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/global.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery.mousewheel.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script src="js/bdmap.js"></script>
+	<script src="js/global.js"></script>
+	
+</head>
+<body>
+
+	<!-- 主要内容 -->
+	<div id="mainwarp">
+		<div id="main">
+
+			<!-- 全局导航 -->
+			<div id="slide_nav">
+				<div class="menubtn font_arial">MENU</div>
+				<div class="closenav"></div>
+				<ul id="slide_nav_list" class="font_arial">
+					<li class="current_nav"><a data="p1" href="javascript:;">HOME</a></li>
+					<li><a data="p2" href="javascript:;">SPEAKERS</a></li>
+					<li><a data="p3" href="javascript:;">ARCHIVE</a></li>
+					<li><a data="p4" href="javascript:;">LOCATION</a></li>
+					<li><a data="p5" href="javascript:;">NEWS</a></li>
+					<li><a data="p6" href="javascript:;">ABOUT</a></li>
+					<li><a data="p7" href="javascript:;">CONTACT US</a></li>
+					<li><a target="_blank" href="http://www.baidu.com">BBS FORUM</a></li>
+				</ul>
+			</div>
+			<!-- /全局导航 -->
+
+			<!--p1-->
+			<div id="p1" class="globalp current_p">
+
+				<div class="p1con">
+					<img src="img/p1_banner.jpg" width="100%" height="100%"/>
+					<!-- 倒计时data输入距离那天的秒数总和 -->
+					<div id="d_time" data-diff="2231240"></div>
+					<!-- /倒计时 -->
+				</div>
+
+				<!-- 提示操作遮罩层 -->
+				<div class="float_div"></div>
+				<div class="cz_info"></div>
+				<!-- /提示操作遮罩层 -->
+				
+			</div>
+			<!--/p1-->
+
+			<!--p2-->
+			<div id="p2" class="globalp">
+				<div class="p2con v_center">
+					<div class="tit">
+						<span class="h4">Speakers</span>
+						<span class="desc">Leading digital creatives and industry experts</span>
+						<span class="line"></span>
+					</div>
+
+					<div class="content">
+						<!-- 人物列表 -->
+						<ul id="h_list">
+							<li>
+								<img src="img/p2_pic.png"/>
+								<div class="img_info">GET INVOLVED</div>
+								<div class="h_info">INTERACTIVE CD, CLEMENGER BBDO</div>
+								<p class="font_arial">As well as being a highly awarded creative, Ben is a passionate teacher and former head of AWARD School</p>
+								<div class="more_link font_arial"><a href="#">More about speaker...</a></div>
+							</li>
+
+							<li>
+								<img src="img/p2_pic.png"/>
+								<div class="img_info">GET INVOLVED</div>
+								<div class="h_info">INTERACTIVE CD, CLEMENGER BBDO</div>
+								<p class="font_arial">As well as being a highly awarded creative, Ben is a passionate teacher and former head of AWARD School</p>
+								<div class="more_link font_arial"><a href="#">More about speaker...</a></div>
+							</li>
+
+							<li>
+								<img src="img/p2_pic.png"/>
+								<div class="img_info">GET INVOLVED</div>
+								<div class="h_info">INTERACTIVE CD, CLEMENGER BBDO</div>
+								<p class="font_arial">As well as being a highly awarded creative, Ben is a passionate teacher and former head of AWARD School</p>
+								<div class="more_link font_arial"><a href="#">More about speaker...</a></div>
+							</li>
+						</ul>
+						<div class="bottom_btn_area">
+							<a class="bottom_btn" href="#">See all speakers</a>
+						</div>
+						<!-- /人物列表 -->
+					</div>
+				</div>
+			</div>
+			<!--/p2-->
+
+			<!--p3-->
+			<div id="p3" class="globalp">
+				<div class="p3con v_center">
+					<div class="tit">
+						<span class="h4">Archive</span>
+						<span class="desc">An interdisciplinary platform for digital and interactive</span>
+						<span class="line"></span>
+					</div>
+
+					<div class="content">
+						
+						<!-- 图片列表 -->
+						<ul id="piclist1" class="piclist">
+							<li>
+								<img src="img/p3_pic.jpg"/>
+								<div class="date font_arial">November 30, 2014</div>
+								<p class="desc1">Cryptocurrency_PauseFestivalIf digital money evolve?</p>
+								<p class="desc2 font_arial">How much of your life is online, across national boundaries?</p>
+							</li>
+
+							<li style="margin:0 81px">
+								<img src="img/p3_pic.jpg"/>
+								<div class="date font_arial">November 30, 2014</div>
+								<p class="desc1">Cryptocurrency_PauseFestivalIf digital money evolve?</p>
+								<p class="desc2 font_arial">How much of your life is online, across national boundaries?</p>
+							</li>
+
+							<li>
+								<img src="img/p3_pic.jpg"/>
+								<div class="date font_arial">November 30, 2014</div>
+								<p class="desc1">Cryptocurrency_PauseFestivalIf digital money evolve?</p>
+								<p class="desc2 font_arial">How much of your life is online, across national boundaries?</p>
+							</li>
+						</ul>
+						<!-- /图片列表 -->
+							
+						<div class="bottom_btn_area">
+							<a class="bottom_btn" href="#">See all Archive</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!--/p3-->
+
+			<!--p4-->
+			<div id="p4" class="globalp">
+				<div id="bdmap"></div>
+				<!-- 地图信息 -->
+				<div id="mapinfo">
+					<div class="mapinfo_tit">venue</div>
+					<div class="minfo1"><span>fed asdasdssd</span></div>
+					<div class="minfo2"><span>asdasasdasdssd@gmail.com</span></div>
+					<div class="minfo3"><span>135894564954</span></div>
+				</div>
+				<!-- /地图信息 -->
+			</div>
+			<!--/p4-->
+
+			<!--p5-->
+			<div id="p5" class="globalp">
+				<div class="p5con v_center">
+					<div class="tit">
+						<span class="h4">News</span>
+						<span class="desc">The latest digital happenings in China</span>
+						<span class="line"></span>
+					</div>
+
+					<div class="content">
+						
+						<!-- 图片列表 -->
+						<ul id="piclist2" class="piclist">
+							<li>
+								<img src="img/p5_pic.jpg"/>
+								<div class="date font_arial">November 30, 2014</div>
+								<p class="desc1">Ben Keenan</p>
+								<p class="desc2 font_arial">Sunday = Project Focus: Now the real work begins. Sunday brings together some of the most innovative and disruptive thinking fromnect</p>
+							</li>
+
+							<li  style="margin:0 81px">
+								<img src="img/p5_pic.jpg"/>
+								<div class="date font_arial">November 30, 2014</div>
+								<p class="desc1">Ben Keenan</p>
+								<p class="desc2 font_arial">Sunday = Project Focus: Now the real work begins. Sunday brings together some of the most innovative and disruptive thinking fromnect</p>
+							</li>
+
+							<li>
+								<img src="img/p5_pic.jpg"/>
+								<div class="date font_arial">November 30, 2014</div>
+								<p class="desc1">Ben Keenan</p>
+								<p class="desc2 font_arial">Sunday = Project Focus: Now the real work begins. Sunday brings together some of the most innovative and disruptive thinking fromnect</p>
+							</li>
+						</ul>
+						<!-- /图片列表 -->
+							
+						<div class="bottom_btn_area">
+							<a class="bottom_btn" href="#">See all News</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!--/p5-->
+
+			<!--p6-->
+			<div id="p6" class="globalp">
+				<div class="p6con v_center">
+					<div class="tit">
+						<span class="h4">About</span>
+						<span class="desc">Collaborative / Visionary / Inspiring </span>
+						<span class="line"></span>
+					</div>
+
+					<div class="content">
+						<p class="about_desc">
+							Pause Fest is Australia’s premier digital event, aimed at supporting and showcasing the best in creative and tech from Australia and all over the world.</br>
+
+	In 2014, Pause lit up Federation Square, with over 6,000 people flocking to the innovation capital of Australia. From humble beginnings in 2011, Pause Fest has rapidly grown to become one of the most anticipated events on the bustling Australian festival calendar. Pause Fest attracts a powerful mix of industry professionals, startups and early adopters from a broad range of digital disciplines. The event represents a unique opportunity for locals to connect, collaborate and lau nch projects alongside global leaders and visionary brands.</br>
+
+
+
+	Each Pause festival tells a story through a unique theme. In 2015, the theme is Pure
+
+						</p>
+						
+						<div class="bottom_btn_area">
+							<a class="bottom_btn" href="#">See all About</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!--/p6-->
+
+			<!--p7-->
+			<div id="p7" class="globalp">
+				<img id="bg_img" src="img/p6_bg.jpg" width="100%" height="100%"/>
+				<div class="lxwm">
+					<!-- 表单&info -->
+					<div class="lxwm_con v_center">
+						<div class="lxwm_con_l">
+							<ul class="gw_info">
+								<li class="i1">Gwantsi ShangHai</li>
+								<li class="i2">021  5239  1680</li>
+								<li class="i3">4F,Block B,357 Zhaohua Road,</br> Shanghai,China</br>POSTCODE:200050</br>FAX:021-62521428</li>
+							</ul>
+						</div>
+						<div class="lxwm_con_r">
+							
+							<!-- 表单 -->
+							<div class="lxwm_f">
+								<div class="item">
+									<input placeholder="Name*" class="txt" type="text"/>
+								</div>
+								<div class="item">
+									<input placeholder="Company*" class="txt" type="text"/>
+								</div>
+								<div class="item">
+									<input placeholder="Phone*" class="txt" type="text"/>
+								</div>
+								<div class="item">
+									<input placeholder="E-mail*" class="txt" type="text"/>
+								</div>
+								<div class="item" style="height:100%">
+									<textarea placeholder="Content*" class="tarea" rows="" cols="" name=""></textarea>
+								</div>
+
+								<div class="smbtn"><input class="s_btn" type="submit" value="submit"/></div>
+									
+							</div>
+							<!-- /表单 -->
+						
+						</div>
+					</div>
+					<!-- /表单&info -->
+
+					<!--footer-->
+					<div id="footer">
+						<div class="footer_area">
+							<div class="footer_l">
+								<div class="f_link_list"><a href="javascript:;">Home</a><span class="line"></span><a href="javascript:;">Speakers</a><span class="line"></span><a href="javascript:;">Archive</a><span class="line"></span><a href="javascript:;">Location</a><span class="line"></span><a href="javascript:;">News</a><span class="line"></span><a href="javascript:;">About</a><span class="line"></span><a href="javascript:;">Contact US</a><span class="line"></span><a href="#">BBS Forum</a></div>
+							</div>
+							<div class="footer_r">
+								<div class="f_lx_phone">201  5239  1680</div>
+								<div class="f_lx_add">4F,Block B,357 Zhaohua Road, Shanghai,China</div>
+							</div>
+						</div>
+					</div>
+					<!--/footer-->
+
+				</div>
+				
+			</div>
+			<!--/p7-->
+			
+		</div>
+	</div>
+	<!-- /主要内容 -->
+	
+</body>
+</html>
+
+

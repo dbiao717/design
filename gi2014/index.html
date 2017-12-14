@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>GI</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=0.6,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<script src="js/jquery-1.7.2.min.js"></script>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/gi_index.css" />
+<link rel="icon"href="images/gi_ico.ico"type="image/x-icon">
+<script src="js/jquery.masonry.min.js"></script>
+<script src="js/jquery.isotope.js"></script>
+<script language="javascript" src="js/jwplayer.js"></script>
+<script type="text/javascript">jwplayer.key="lwcULutluzYA872LoWcFrslIprd8HvHIuzZU7w==";</script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/global.js"></script>
+<script src="js/particle.js"></script>
+<script src="js/isotope-docs.min.js"></script>
+
+</head>
+<script type="text/javascript">
+	var picLink = "<?=cm_url::get('file')?>";
+</script>
+<body onload="init();particleBg();">
+<canvas id="canvas-bg" width="1903" height="1906" style="display: none;"></canvas>
+<!-- global nav -->
+<!-- global nav -->
+<input type="hidden" value="en" id="languageChoose">
+<div class="nav_areabg" style="width: 1903px;">
+	<div id="nav_area" lan="en" style="width: 1903px;">
+		<!--logo&search-->
+		<div class="search_area">
+			<a id="logo" href="index.html"></a>
+			<div class="search">
+            	<a class="gwantsi_link" target="_blank" href="http://www.gwantsi.com/"></a>
+				<a class="old_gilink" target="_blank" href="http://old.g-i.asia/"></a>
+				<a class="weibo_link" target="_blank" href="http://weibo.com/p/1006061621809804"></a>
+				<a class="weixin_link" target="_blank" href="qrcode.html"></a>
+				<span class="line"></span>
+				<a class="language-en cur" href="javascript:;">EN</a>
+				<span class="lan-line"></span>
+				<a class="language-cn" href="javascript:;">中文</a>
+			</div>
+		</div>
+		<!--/logo&search-->
+		<!-- nav_bottom -->
+		<div class="nav_bottom">
+			<ul class="links">
+				<li><a href="about.html" class="menu_about">About us</a></li>
+				<li><a href="join.html" class="menu_join">Join us</a></li>
+				<li><a href="news.html" class="menu_new">News</a></li>
+				<li><a href="contact.html" class="menu_contact">Contact us</a></li>
+				<li><a href="javascript:;">G-Lab</a></li>
+			</ul>
+			<!-- 筛选链接 -->
+			<div class="sx_link">
+				<span id="tjq" style="top: 50px;"></span>
+				<a href="javascript:;" data="2">Technical</a>
+				<a class="current" href="javascript:;" data="1">Our work</a>
+				<a href="javascript:;" data="3" class="">3D</a>
+			</div>
+			<!-- /筛选链接 -->
+			<div class="right" style="display: block;">
+				G-i.asia<br>
+				are hiring now!				<br>
+				<a href="join.html">Join us &gt;</a>
+			</div>
+		</div>
+		<!-- /nav_bottom -->
+	</div>
+</div>
+<!-- /global nav --><!-- global nav -->
+<!-- 隐藏的input用来记录页数 -->
+<div id="setpagenum" data="1"></div>
+<div id="f_click" data="1"></div>
+<!-- /隐藏的input用来记录页数 -->
+<!-- 序列帧背景 -->
+<div id="contentbg"></div>
+<!-- /序列帧背景 -->
+	<!-- loading遮罩层 -->
+	<div class="loading_marsk"></div>
+	<div class="loading_img"><img src="./www.g-i.asia_files/loading.gif"></div>
+	<!-- /loading遮罩层 -->
+	<!-- 列表内容 -->
+	<div class="list_container" style="width: auto;">
+    	<!-- 列表模式 -->
+        <div class="styles">
+        	<ul>
+            	<a href="javascript:;" title="列表模式"><li class="item1 item1_active"></li></a>
+                <a href="javascript:;" title="网格模式"><li class="item2"></li></a>
+            </ul>
+        </div>
+        <!-- 列表模式 -->
+        <div class="demo">
+            <div class="js-isotope" style="position: relative; height: 4000px;">
+                <div class="element-item" style="position: absolute; left: 0px; top: 0px;">
+               		<img src="images/styles/img1.jpg">
+                    <div class="blue">
+                        <a href="javascript:;">JAGUAR_XJL_XF</a>
+                    </div>
+                </div>
+                <div class="element-item itemmove" style="position: absolute; left: 0px; top: 200px;"><img src="images/styles/img2.jpg">
+                <div class="green"><a href="javascript:;">JAGUAR F-TYPE</a></div></div>
+                <div class="element-item itemmove" style="position: absolute; left: 0px; top: 400px;"><img src="images/styles/img3.jpg">
+                <div class="red"><a href="javascript:;">暴雪娱乐BLIZZARD </a></div></div>
+                <div class="element-item itemmove" style="position: absolute; left: 0px; top: 600px;"><img src="images/styles/img4.jpg">
+                <div class="blue"><a href="javascript:;">多乐士DULUX</a></div></div>
+                <div class="element-item itemmove" style="position: absolute; left: 0px; top: 800px;"><img src="images/styles/img5.jpg">
+                <div class="green"><a href="javascript:;">JAGUAR_XJL_XF</a></div></div>
+                <div class="element-item itemmove" style="position: absolute; left: 0px; top: 1000px;"><img src="images/styles/img6.jpg">
+                <div class="red"><a href="javascript:;">JAGUAR_XJL_XF</a></div></div>
+                <div class="element-item itemmove" style="position: absolute; left: 0px; top: 1200px;"><img src="images/styles/img7.jpg">
+                <div class="blue"><a href="javascript:;">JAGUAR_XJL_XF</a></div></div>
+                <div class="element-item itemmove" style="position: absolute; left: 0px; top: 1400px;"><img src="images/styles/img8.jpg">
+                <div class="green"><a href="javascript:;">JAGUAR_XJL_XF</a></div></div>
+                <div class="element-item itemmove" style="position: absolute; left: 0px; top: 1600px;"><img src="images/styles/img9.jpg">
+                <div class="red"><a href="javascript:;">JAGUAR_XJL_XF</a></div></div>
+                <div class="element-item itemmove" style="position: absolute; left: 0px; top: 1800px;"><img src="images/styles/img10.jpg">
+                <div class="blue"><a href="javascript:;">JAGUAR_XJL_XF</a></div></div>
+                <div class="element-item itemmove" style="position: absolute; left: 0px; top: 2000px;"><img src="images/styles/img11.jpg">
+                <div class="green"><a href="javascript:;">JAGUAR_XJL_XF</a></div></div>
+                <div class="element-item itemmove" style="position: absolute; left: 0px; top: 2200px;"><img src="images/styles/img12.jpg">
+                <div class="red"><a href="javascript:;">JAGUAR_XJL_XF</a></div></div>
+                <div class="element-item itemmove" style="position: absolute; left: 0px; top: 2400px;"><img src="images/styles/img13.jpg">
+                <div class="blue"><a href="javascript:;">JAGUAR_XJL_XF</a></div></div>
+                <div class="element-item itemmove" style="position: absolute; left: 0px; top: 2600px;"><img src="images/styles/img14.jpg">
+                <div class="green"><a href="javascript:;">JAGUAR_XJL_XF</a></div></div>
+                <div class="element-item itemmove" style="position: absolute; left: 0px; top: 2800px;"><img src="images/styles/img15.jpg">
+                <div class="red"><a href="javascript:;">JAGUAR_XJL_XF</a></div></div>
+                <div class="element-item itemmove" style="position: absolute; left: 0px; top: 3000px;"><img src="images/styles/img16.jpg">
+                <div class="blue"><a href="javascript:;">JAGUAR_XJL_XF</a></div></div>
+                <div class="element-item itemmove" style="position: absolute; left: 0px; top: 3200px;"><img src="images/styles/img17.jpg">
+                <div class="green"><a href="javascript:;">JAGUAR_XJL_XF</a></div></div>
+                <div class="element-item itemmove" style="position: absolute; left: 0px; top: 3400px;"><img src="images/styles/img18.jpg">
+                <div class="red"><a href="javascript:;">JAGUAR_XJL_XF</a></div></div>
+                <div class="element-item itemmove" style="position: absolute; left: 0px; top: 3600px;"><img src="images/styles/img19.jpg">
+                <div class="blue"><a href="javascript:;">JAGUAR_XJL_XF</a></div></div>
+                <div class="element-item itemmove" style="position: absolute; left: 0px; top: 3800px;"><img src="images/styles/img20.jpg">
+                <div class="green"><a href="javascript:;">JAGUAR_XJL_XF</a></div></div>
+            </div>
+        </div>
+        
+		<div id="container" style="margin: 0px auto; position: relative; height: 1662px;">
+			<div id="first_item" class="list_item" style="height: 383px; position: absolute; left: 0px; top: 0px; background: rgb(237, 237, 237);">
+								<img src="images/fontdesc_03.png">
+								<div class="fontdesc_div"><a class="fontdesc" target="_blank" href="javascript:;">Read More &gt;</a></div>
+			</div>
+											<div class="list_item" style="position: absolute; left: 484px; top: 0px; z-index: 100;">
+						<a href="javascript:;" class="list_item_holder">
+							<div class="type" data="work"></div>
+							<div class="color_area" style="width: 734px; height: 523px; z-index: 10; top: -6px; opacity: 0.613036801111121; background-color: rgb(0, 153, 203);"></div>
+							<div class="imgarea" data="714&amp;388">
+								<img class="img_o" src="images/works/01.jpg" width="714" height="388" style="width: 714px; height: 388px; transform: matrix(1.1505001462048, 0, 0, 1.1505001462048, 0, 0);">
+							</div>
+							<div class="desc">
+								<p><span>NIKE+</span></p>
+								<span class="Showreels" data="54">Our work</span>
+							</div>
+						</a>
+					</div>
+															<div class="list_item" style="position: absolute; left: 0px; top: 513px;">
+						<a href="javascript:;" class="list_item_holder">
+							<div class="type" data="3D"></div>
+							<div class="color_area"></div>
+							<div class="imgarea" data="714&amp;388">
+								<img class="img_o" src="images/works/02.jpg" width="714" height="388" style="width: 714px; height: 388px;">
+							</div>
+							<div class="desc">
+								<p><span>现代"沪上生态家"VR移动终端演示程序</span></p>
+								<span class="Showreels" data="57">3D</span>
+							</div>
+						</a>
+					</div>
+															<div class="list_item" style="position: absolute; left: 0px; top: 1026px;">
+						<a href="javascript:;" class="list_item_holder">
+							<div class="type" data="work"></div>
+							<div class="color_area"></div>
+							<div class="imgarea" data="714&amp;388">
+								<img class="img_o" src="images/works/03.jpg" width="714" height="388" style="width: 714px; height: 388px;">
+							</div>
+							<div class="desc">
+								<p><span>MO&amp;Co. Music TO Future</span></p>
+								<span class="Showreels" data="56">Our work</span>
+							</div>
+						</a>
+					</div>
+															<div class="list_item" style="position: absolute; left: 724px; top: 513px;">
+						<a href="javascript:;" class="list_item_holder">
+							<div class="type" data="work"></div>
+							<div class="color_area"></div>
+							<div class="imgarea" data="474&amp;258">
+								<img class="img_o" src="images/works/04.jpg" width="474" height="258" style="width: 474px; height: 258px;">
+							</div>
+							<div class="desc">
+								<p><span>LIVE OUT LOUD</span></p>
+								<span class="Showreels" data="53">Our work</span>
+							</div>
+						</a>
+					</div>
+															<div class="list_item" style="position: absolute; left: 724px; top: 896px;">
+						<a href="javascript:;" class="list_item_holder">
+							<div class="type" data="techinical"></div>
+							<div class="color_area"></div>
+							<div class="imgarea" data="474&amp;258">
+								<img class="img_o" src="images/works/05.jpg" width="474" height="258" style="width: 474px; height: 258px;">
+							</div>
+							<div class="desc">
+								<p><span>AMORIS LUMINA</span></p>
+								<span class="Showreels" data="52">Technical</span>
+							</div>
+						</a>
+					</div>
+															<div class="list_item" style="position: absolute; left: 724px; top: 1279px;">
+						<a href="javascript:;" class="list_item_holder">
+							<div class="type" data="work"></div>
+							<div class="color_area"></div>
+							<div class="imgarea" data="474&amp;258">
+								<img class="img_o" src="images/works/06.jpg" width="474" height="258" style="width: 474px; height: 258px;">
+							</div>
+							<div class="desc">
+								<p><span>CONVERSE</span></p>
+								<span class="Showreels" data="55">Our work</span>
+							</div>
+						</a>
+					</div>
+									</div>
+	</div>
+	<!-- /列表内容 -->
+    
+    <!-- 瀑布流布局 -->
+    
+    
+    <!-- /瀑布流布局 -->
+    
+	<!-- morelink -->
+	<div class="morelinks" style="width: 1200px;">
+		<a id="backtotop" href="javascript:;">back to top</a>
+		<a id="showmore" href="javascript:;">show more</a>
+	</div>
+	<!-- /morelink -->
+	<!-- footer -->
+		<!-- footer -->
+	<div class="footer_bg">
+		<div id="footer" style="width: 1200px;">
+			<div class="desc">沪ICP备15017036号</div>
+			<div class="links">
+			© Gi Moving Picture Company2015
+			</div>
+            <a class="f_logo"></a>
+            <span class="line"></span>
+            <a href="http://www.gwantsi.com/" target="_blank" class="gwantsi_logo"></a>
+		</div>
+        
+	</div>
+	<!-- /footer -->
+	<div class="pre-load" id="preLoad" style="display: none;"></div>
+    	<!-- /footer -->
+
+
+<script>
+	function init(){
+		$('#container').masonry({
+	      itemSelector: '.list_item',
+	      columnWidth: 1,
+		  isAnimated: true
+	    });
+		gototop();
+		get_ajaxdata();
+		sx_link_ux();
+		addColor();
+	}
+	
+	var ah1 = $('.ah_1');
+	var ah2 = $('.ah_2');
+	var ah3 = $('.ah_3');
+	var that,that1;
+	//"color","#9E9E9E" 灰色
+	//"color","#fc2367" 红色
+	//"color","#55bb4b" 绿色
+	//"color","#158fbd" 蓝色
+	
+	$('.sx_link a').hover(function(){
+		that = $(this).index();
+		//console.log(that);
+		$(this).addClass('ah_'+that);
+	},function(){
+		that = $(this).index();
+		$(this).removeClass('ah_'+that);
+	});
+	
+	var colorArr = ['#55bb4b','#158fbd','#fc2367'];
+
+	$('.sx_link a').click(function(){
+		that1 = $(this).index() - 1;
+		//console.log(that1);
+		$('.sx_link a').removeAttr("style");
+		$(this).css('color',colorArr[that1]);
+		Open();
+		method();
+	});
+	
+	
+	
+	function canvanResize() //获取高度自适应
+	{
+		$("#canvas-bg").attr("width" , parseInt($("body").width()));
+		$("#canvas-bg").attr("height" , parseInt($("body").height()) - 480 );
+		
+		$(window).resize(function(){
+			
+			$("#canvas-bg").hide();
+			setTimeout(function(){
+				$("#canvas-bg").attr("width" , parseInt($("body").width()));
+				$("#canvas-bg").attr("height" , parseInt($("body").height()) - 480 );
+				$("#canvas-bg").show();
+			} , 1000);	
+		});
+	}
+	
+	function method() //方法
+	{
+		$('.js-isotope').isotope({  
+		  itemSelector : '.element-item',  
+		  layoutMode : 'fitRows',
+		  sortBy: 'original-order' 
+		});
+	}
+	
+	function Close()//打开dome 执行的函数
+	{
+		$("#container").css({display:"none"});
+		$(".demo").css({display:"block"});
+		$(".item2").addClass("item2_active");
+		$(".item1").removeClass("item1_active");
+		method();
+		canvanResize();
+	}
+	
+	function Open()//关闭dome 执行的函数
+	{
+		$("#container").css({display:"block"});
+		$(".demo").css({display:"none"});	
+		$(".item1").addClass("item1_active");
+		$(".item2").removeClass("item2_active");
+	}
+	
+	$(".item2").click(function(){
+		Close();
+		method();
+	});
+	
+	
+	$(".item1").click(function(){
+		Open();
+		method();
+	});
+
+	
+	$(".element-item").mouseenter(function(){
+		//鼠标移入
+		$(this).css({"z-index":"9"});
+	}).mouseleave(function(){
+		//鼠标移出
+		$(this).css({"z-index":"8"});
+	});
+	
+	
+	
+</script>
+</body>
+</html>

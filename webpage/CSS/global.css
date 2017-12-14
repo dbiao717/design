@@ -1,0 +1,15 @@
+
+img { border:0;}
+ul li { list-style:none;}
+body,ul,li,div,dl,dd,dt,img,p,h1,h2,h3 { margin:0; padding:0;}
+ul,li { display:block; list-style:none;}
+.pointer { cursor:pointer}
+.clear { clear:both; height:0; line-height:0; font-size:0;}
+h1,h2,h3 { font-size: inherit; display:inline; font-weight:normal}
+em{font-style:normal}
+body,html{
+	padding:0;margin:0;
+}
+a{
+	text-decoration:none;
+}

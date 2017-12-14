@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://www.g-i.asia/news.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GI</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script src="js/jquery-1.7.2.min.js"></script>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/gi_index.css">
+<link rel="icon" href="images/gi_ico.ico" type="image/x-icon">
+<script src="js/jquery.masonry.min.js"></script>
+<script language="javascript" src="js/jwplayer.js"></script>
+<script language="javascript" src="js/global-news.js"></script>
+<script type="text/javascript">jwplayer.key="lwcULutluzYA872LoWcFrslIprd8HvHIuzZU7w==";</script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/particle.js"></script>
+</head>
+<body onload="init(); particleBg();" id="body_news">
+<canvas id="canvas-bg" width="1903" height="1753" style="display: none;"></canvas>
+<!-- global nav -->
+<!-- global nav -->
+<input type="hidden" value="en" id="languageChoose">
+<div class="nav_areabg" style="width: 1903px;">
+	<div id="nav_area" lan="en" style="width: 1903px;">
+		<!--logo&search-->
+		<div class="search_area">
+			<a id="logo" href="index.html"></a>
+			<div class="search">
+            	<a class="gwantsi_link" target="_blank" href="http://www.gwantsi.com/"></a>
+				<a class="old_gilink" target="_blank" href="http://old.g-i.asia/"></a>
+				<a class="weibo_link" target="_blank" href="http://weibo.com/p/1006061621809804"></a>
+				<a class="weixin_link" target="_blank" href="qrcode.html"></a>
+				<span class="line"></span>
+				<a class="language-en cur" href="javascript:;">EN</a>
+				<span class="lan-line"></span>
+				<a class="language-cn" href="javascript:;">中文</a>
+			</div>
+		</div>
+		<!--/logo&search-->
+		<!-- nav_bottom -->
+		<div class="nav_bottom">
+			<ul class="links">
+				<li><a href="about.html" class="menu_about">About us</a></li>
+				<li><a href="join.html" class="menu_join">Join us</a></li>
+				<li><a href="news.html" class="menu_new">News</a></li>
+				<li><a href="contact.html" class="menu_contact">Contact us</a></li>
+				<li><a href="javascript:;">G-Lab</a></li>
+			</ul>
+			<!-- 筛选链接 -->
+			<div class="sx_link">
+				<span id="tjq" style="top: 50px;"></span>
+				<a href="javascript:;" data="2">Technical</a>
+				<a class="current" href="javascript:;" data="1">Our work</a>
+				<a href="javascript:;" data="3" class="">3D</a>
+			</div>
+			<!-- /筛选链接 -->
+			<div class="right" style="display: block;">
+				G-i.asia<br>
+				are hiring now!				<br>
+				<a href="join.html">Join us &gt;</a>
+			</div>
+		</div>
+        <!-- /nav_bottom -->
+	</div>
+</div>
+<!-- /global nav --><!-- global nav -->
+<!-- 隐藏的input用来记录页数 -->
+<div id="setpagenum" data="1"></div>
+<div id="f_click" data="1"></div>
+<!-- /隐藏的input用来记录页数 -->
+<!-- 序列帧背景 -->
+<div id="contentbg"></div>
+<!-- /序列帧背景 -->
+	<!-- loading遮罩层 -->
+	<div class="loading_marsk"></div>
+	<div class="loading_img"><img src="images/loading.gif"></div>
+	<!-- /loading遮罩层 -->
+	<style>
+		#news_none{width:400px; margin:0 auto; padding:200px 0;text-align:center}
+	</style>
+		<!-- 列表内容 -->
+	<div class="list_container" style="min-height: 500px; padding-left: 330px; padding-right: 330px;">
+		<div id="container" style="margin: 0px auto; position: relative; height: 1509px;" class="masonry">
+											<div class="list_item masonry-brick" style="position: absolute; top: 0px; left: 0px;">
+					<!-- type类型 -->
+					<div class="type"></div>
+					<!-- type类型 -->
+					<div class="color_area"></div>
+					<div class="imgarea">
+						<img style="width: 474px; height: 258px;" src="images/news/01.png">
+					</div>
+					<div class="desc">
+						<p>Adidas NEO OOH GAME</p>
+						<a class="Showreels" href="javascript:;">News</a>
+					</div>
+				</div>
+															<div class="list_item masonry-brick" style="position: absolute; top: 0px; left: 484px;">
+					<!-- type类型 -->
+					<div class="type"></div>
+					<!-- type类型 -->
+					<div class="color_area"></div>
+					<div class="imgarea">
+						<img style="width: 474px; height: 258px;" src="images/news/02.png">
+					</div>
+					<div class="desc">
+						<p>Tropicana</p>
+						<a class="Showreels" href="javascript:;">News</a>
+					</div>
+				</div>
+															<div class="list_item masonry-brick" style="position: absolute; top: 387px; left: 0px;">
+					<!-- type类型 -->
+					<div class="type"></div>
+					<!-- type类型 -->
+					<div class="color_area"></div>
+					<div class="imgarea">
+						<img style="width: 474px; height: 258px;" src="images/news/03.png">
+					</div>
+					<div class="desc">
+						<p>Tropicana</p>
+						<a class="Showreels" href="javascript:;">News</a>
+					</div>
+				</div>
+															<div class="list_item masonry-brick" style="position: absolute; top: 387px; left: 484px;">
+					<!-- type类型 -->
+					<div class="type"></div>
+					<!-- type类型 -->
+					<div class="color_area"></div>
+					<div class="imgarea">
+						<img style="width: 713px; height: 388px;" src="images/news/04.png">
+					</div>
+					<div class="desc">
+						<p>Adidas NEO OOH GAME</p>
+						<a class="Showreels" href="javascript:;">News</a>
+					</div>
+				</div>
+															<div class="list_item masonry-brick" style="position: absolute; top: 774px; left: 0px;">
+					<!-- type类型 -->
+					<div class="type"></div>
+					<!-- type类型 -->
+					<div class="color_area"></div>
+					<div class="imgarea">
+						<img style="width: 474px; height: 258px;" src="images/news/05.png">
+					</div>
+					<div class="desc">
+						<p>Jaguar</p>
+						<a class="Showreels" href="javascript:;">News</a>
+					</div>
+				</div>
+															<div class="list_item masonry-brick" style="position: absolute; top: 904px; left: 484px;">
+					<!-- type类型 -->
+					<div class="type"></div>
+					<!-- type类型 -->
+					<div class="color_area"></div>
+					<div class="imgarea">
+						<img style="width: 474px; height: 258px;" src="images/news/06.png">
+					</div>
+					<div class="desc">
+						<p>KISSES</p>
+						<a class="Showreels" href="javascript:;">News</a>
+					</div>
+				</div>
+															<div class="list_item masonry-brick" style="position: absolute; top: 1161px; left: 0px;">
+					<!-- type类型 -->
+					<div class="type"></div>
+					<!-- type类型 -->
+					<div class="color_area"></div>
+					<div class="imgarea">
+						<img style="width: 474px; height: 219px;" src="images/news/07.jpg">
+					</div>
+					<div class="desc">
+						<p>BUBBLE</p>
+						<a class="Showreels" href="javascript:;">News</a>
+					</div>
+				</div>
+									</div>
+	</div>
+	<!-- /列表内容 -->
+		<!-- morelink -->
+	<div class="morelinks" style="width: 1200px;">
+		<a id="backtotop" href="javascript:;">back to top</a>
+	</div>
+	<!-- /morelink -->
+	<!-- footer -->
+		<!-- footer -->
+	<div class="footer_bg">
+		<div id="footer" style="width: 1200px;">
+			<div class="desc">沪ICP备15017036号</div>
+			<div class="links">
+			© Gi Moving Picture Company2015
+			</div>
+            <a class="f_logo"></a>
+            <span class="line"></span>
+            <a href="http://www.gwantsi.com/" target="_blank" class="gwantsi_logo"></a>
+		</div>
+        
+	</div>
+	<!-- /footer -->
+	<div class="pre-load" id="preLoad" style="display: none;"></div>
+    	<!-- /footer -->
+
+
+<script>
+function init(){
+	$('#container').masonry({
+      itemSelector: '.list_item',
+      columnWidth: 1,
+	  isAnimated:true,
+    });
+	function gototop(){
+		$('#backtotop').bind('click',function(){
+			$("html, body").animate({ scrollTop: 0 }, "1000");
+		});
+	}
+	gototop();
+}
+
+</script></body></html>

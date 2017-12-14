@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0031)http://www.g-i.asia/joinus.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>GI</title>
+<link rel="icon" href="images/gi_ico.ico" type="image/x-icon">
+<link href="css/Join us.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/gi_index.css">
+<script language="javascript" src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.masonry.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/global-head.js"></script> 
+<script src="js/particle.js"></script>
+</head>
+
+<body onload="particleBg();" id="body_joinus">
+<canvas id="canvas-bg" width="1903" height="1889" style="display: none;"></canvas>
+<!-- global nav -->
+<!-- global nav -->
+<input type="hidden" value="en" id="languageChoose">
+<div class="nav_areabg" style="width: 1903px;">
+	<div id="nav_area" lan="en">
+		<!--logo&search-->
+		<div class="search_area">
+			<a id="logo" href="index.html"></a>
+			<div class="search">
+            	<a class="gwantsi_link" target="_blank" href="http://www.gwantsi.com/"></a>
+				<a class="old_gilink" target="_blank" href="http://old.g-i.asia/"></a>
+				<a class="weibo_link" target="_blank" href="http://weibo.com/p/1006061621809804"></a>
+				<a class="weixin_link" target="_blank" href="qrcode.html"></a>
+				<span class="line"></span>
+				<a class="language-en cur" href="javascript:;">EN</a>
+				<span class="lan-line"></span>
+				<a class="language-cn" href="javascript:;">中文</a>
+			</div>
+		</div>
+		<!--/logo&search-->
+		<!-- nav_bottom -->
+		<div class="nav_bottom">
+			<ul class="links">
+				<li><a href="about.html" class="menu_about">About us</a></li>
+				<li><a href="join.html" class="menu_join">Join us</a></li>
+				<li><a href="news.html" class="menu_new">News</a></li>
+				<li><a href="contact.html" class="menu_contact">Contact us</a></li>
+				<li><a href="javascript:;">G-Lab</a></li>
+			</ul>
+			<!-- 筛选链接 -->
+			<div class="sx_link">
+				<span id="tjq" style="top: 50px;"></span>
+				<a href="javascript:;" data="2">Technical</a>
+				<a class="current" href="javascript:;" data="1">Our work</a>
+				<a href="javascript:;" data="3" class="">3D</a>
+			</div>
+			<!-- /筛选链接 -->
+			<div class="right" style="display: block;">
+				G-i.asia<br>
+				are hiring now!				<br>
+				<a href="join.html">Join us &gt;</a>
+			</div>
+		</div>
+        <!-- /nav_bottom -->
+	</div>
+</div>
+<!-- /global nav -->
+<!-- global nav -->
+
+<div class="center" id="center">
+	<div class="detail-header">
+    	<h1 class="title">Jobs</h1>
+  </div>
+    
+<div class="Photo_Gallery" id="preview">
+    <div class="mask" id="spec-n1" onclick="">
+    	<img src="images/Join_us_bj.jpg" width="1280" height="720">
+    </div>
+    <div id="spec-n5" class="Small_map">
+		<div class="control" id="spec-left">
+			<img src="images/left.gif">
+		</div>
+		<div id="spec-list">
+			<ul class="list-h" style="width: 108px;">
+				<li><img src="images/Join_us_bj.jpg"> </li>
+			</ul>
+		</div>
+		<div class="control" id="spec-right">
+			<img src="images/right.gif">
+		</div>
+		
+    </div>
+    
+</div>
+
+
+
+
+<script type="text/javascript">
+	$(function(){			
+		var leftBut = $("#spec-left");
+		var rightBut = $("#spec-right");
+		var len = $("#spec-list li").length;
+		var imgList = $(".list-h");
+		var movenum = 0;
+		var pagenum = 1;
+		var imgwidth = 108;
+		imgList.css({
+			width : len * imgwidth 	
+		});
+		rightBut.unbind().bind("click" , function(){
+			
+			if( pagenum >= len -2  ){
+				return;
+			}
+			
+			movenum = movenum  -imgwidth;
+			imgList.stop().animate( { left : movenum}, 300);
+			pagenum ++;
+			
+			
+			
+		});
+		leftBut.unbind().bind("click" , function(){
+			
+			if( pagenum <= 1 ){
+				return;
+			}
+			movenum = movenum  + imgwidth;
+			imgList.stop().animate( { left : movenum}, 300)
+			pagenum--;
+			
+		});
+	
+		
+	   $("#spec-list img").bind("click",function(){
+			if($(this).attr("at")){
+					dw(($(this).attr("at")))
+			}else{
+				$("#spec-n1").css("height","auto")
+				var src=$(this).attr("src");
+				$("#spec-n1").html("<img src="+src.replace("\/n5\/","\/n1\/")+" jqimg="+src.replace("\/n5\/","\/n0\/")+" />");
+				/*$("#spec-n1 img").eq(0).attr({
+					src:src.replace("\/n5\/","\/n1\/"),
+					jqimg:src.replace("\/n5\/","\/n0\/")
+				});*/
+				
+			}
+			
+		}).bind("mouseover",function(){
+			$(this).css({
+					"opacity":0.5
+				});	
+		}).bind("mouseout",function(){
+			$(this).css({
+				"opacity":1
+
+			});
+		});		
+	   
+	
+	})
+	</script>
+    
+    <div class="detail_content">
+    	<ul class="tabs">
+        	<li>上海</li>
+        </ul>
+        <div class="horizontal_border"></div>
+        <div class="tabbed_content">
+        	<ul class="job_offers_list">
+                <li><a href="http://www.g-i.asia/joinus.html#">Web前端工程师</a></li>
+            	<li><a href="http://www.g-i.asia/joinus.html#">PHP工程师</a></li>
+            	<li><a href="http://www.g-i.asia/joinus.html#">Asp.net工程师</a></li>
+                <li><a href="http://www.g-i.asia/joinus.html#">产品经理</a></li>
+                <li><a href="http://www.g-i.asia/joinus.html#">策划</a></li>
+            </ul>
+        	<ul class="text_column">
+                <li><a href="http://www.g-i.asia/joinus.html#">Js算法工程师</a></li>
+            	<li><a href="http://www.g-i.asia/joinus.html#">网络架构师</a></li>
+                <li><a href="http://www.g-i.asia/joinus.html#">运维工程师</a></li>
+                <li><a href="http://www.g-i.asia/joinus.html#">软件测试</a></li>
+                <li><a href="http://www.g-i.asia/joinus.html#">UED</a></li>   
+            </ul>
+        </div>
+        <div class="horizontal_border2"></div>
+                	<div class="tags_and_Share">
+        	<h4>Label</h4>
+            <ul>
+            	<li><a href="about.html">About us</a></li>                           
+                <li><a href="join.html">Join us</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact us</a></li>         	
+          </ul>
+        </div>   
+    </div>
+    
+    	<div class="related_content">
+    	<h3>Related Content</h3>
+        <div class="articles_container">
+            <ul>
+                <li><a href="javascript:;" title="米其林轮胎" class="Click_effect"><img src="images/neirong_tupian_03.jpg" width="234" height="128"></a>
+                    <span><a href="javascript:;">米其林轮胎</a></span>
+                    <p><a href="javascript:;">Techinical</a></p>
+                </li>
+                <li><a href="javascript:;" title="F-TYP非你莫属微电影" class="Click_effect"><img src="images/neirong_tupian_05.jpg" width="234" height="128"></a>
+                    <span><a href="javascript:;">F-TYP非你莫属微电影</a></span>
+                    <p><a href="javascript:;">Work</a></p>
+                </li>
+                <li><a href="javascript:;" title="KISSES好时" class="Click_effect"><img src="images/neirong_tupian_07.jpg" width="234" height="128"></a>
+                    <span><a href="javascript:;">KISSES好时</a></span>
+                    <p><a href="javascript:;">Work</a></p>
+                </li>
+                <li><a href="javascript:;" title="LANDROVER路虎" class="Click_effect"><img src="images/neirong_tupian_09.jpg" width="234" height="128"></a>
+                    <span><a href="javascript:;">LANDROVER路虎</a></span>
+                    <p><a href="javascript:;">Work</a></p>
+                </li>
+                <li><a href="javascript:;" title="DULUX" class="Click_effect"><img src="images/neirong_tupian_11.jpg" width="234" height="128"></a>
+                    <span><a href="javascript:;">DULUX</a></span>
+                    <p><a href="javascript:;">Techinical</a></p>
+                </li>
+           </ul>
+      </div>
+    </div>  
+        
+    <div id="clear"></div>
+</div>
+
+	<!-- footer -->
+		<!-- footer -->
+	<div class="footer_bg">
+		<div id="footer" style="width: 1200px;">
+			<div class="desc">沪ICP备15017036号</div>
+			<div class="links">
+			© Gi Moving Picture Company2015
+			</div>
+            <a class="f_logo"></a>
+            <span class="line"></span>
+            <a href="http://www.gwantsi.com/" target="_blank" class="gwantsi_logo"></a>
+		</div>
+        
+	</div>
+	<!-- /footer -->
+	<div class="pre-load" id="preLoad" style="display: none;"></div>
+    	<!-- /footer -->
+
+
+
+</body></html>

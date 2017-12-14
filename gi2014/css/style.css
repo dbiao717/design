@@ -1,0 +1,244 @@
+@charset "utf-8";
+/* CSS Document */
+
+#canvas-bg{
+	position:absolute;
+	top:330px;
+	left:0;
+}
+	
+#header{
+	width:100%;
+	height:330px;
+	background:url(../images/case/TopBg.jpg);
+	border-bottom:solid 1px #dcdbda;
+}
+#logo{
+	max-width:1200px;
+	height:330px;
+	margin:0 auto;
+}
+#logo a{
+	width:191px;
+	height:70px;
+	margin:130px auto;
+	display:block;
+}
+
+#middle{
+	width:100%;
+	background:#ededed;
+}
+
+.content{
+	max-width:1200px;
+	margin:0 auto;
+	position:relative;
+	z-index:9999;
+}
+
+.nav{
+	height:136px;
+	width:100%;
+}
+
+.nav h1{
+	float:left;
+	margin:52px 0 0 40px;
+}
+
+.nav .search{
+	overflow:hidden;
+	width:198px;
+	height:34px;
+	float:right;
+	margin-top:56px;
+}
+
+.soukuan{
+	float:left;
+	width:162px;
+	height:26px;
+	border:none;
+	background:none;
+	border-bottom:solid 1px #83807e;
+	font:16px/26px arial;
+	vertical-align:middle;
+}
+.btn{
+	float:left;
+	width:26px;
+	height:26px;
+	background:url(../images/case/Magnifier.png) 4px 4px no-repeat;
+	border:none;
+	cursor:pointer;
+}
+
+.product_one{
+	width:100%;
+	height:158px;
+	background:#f7f7f7;
+	border-bottom:solid 1px #dcdbda;
+	position:relative;
+}
+.product_two{
+	width:100%;
+	height:158px;
+	background:#fff;
+	border-bottom:solid 1px #dcdbda;
+	position:relative;
+}
+
+.product_img{
+	float:left;
+	margin:50px 0 0 40px;
+}
+.product_img img{
+	float:left;
+}
+.product_img p{
+	float:left;
+	margin:22px 0 0 18px;
+	font:18px arial;
+	color:#111111;
+	max-width:302px;
+	height:38px;
+}
+.site{
+	position:absolute;
+	top:70px;
+	left:0;
+	height:20px;
+	text-align:center;
+	width:100%;
+	line-height:20px;
+}
+.site a{
+	font-family:arial;
+	font-size:16px;
+	color:#666666;
+}
+.site a:hover{
+	color:#0099cc;
+	text-decoration:underline;
+}
+.qr{
+	float:right;
+	width:116px;
+	height:116px;
+	background:#fff;
+	margin:21px 40px 0 0;
+	opacity: 0.15; 
+}
+
+.product_one:hover,.product_two:hover{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+	background:#c8e9f3;
+}
+.product_one:hover .qr,.product_two:hover .qr{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+	opacity:1;
+}
+
+.NextPage{
+	margin:100px auto;
+	max-width:1200px;
+	text-align:center;
+}
+.NextPage .blue{
+	background:#0099cc;
+	color:#fff;
+}
+.NextPage .blue:hover{
+	color:#fff;
+}
+.NextPage .jacu{
+	font-family:"宋体";
+	font-weight:bold;
+}
+.NextPage a{
+	line-height:32px;
+	padding:15px 15px;
+	background:#fff;
+	font-family:arial;
+	font-size:14px;
+	color:#aeaeae;
+	margin-left:5px;
+}
+
+.NextPage a:hover{
+	color:#0099cc;
+}
+.NextPage span{
+	padding:15px 10px 15px 15px;
+	font-family:"宋体";
+}
+
+#footer_bg{
+	width:100%;
+	height:142px;
+	background:#fff;
+	border-top:solid 1px #dbdada;
+	line-height:148px;
+}
+.footer{
+	max-width:1200px;
+	margin:0 auto;
+}
+
+.footer .desc{
+	color:#969696;
+	float:left;
+	font-family:"arial";
+	font-size:15px;
+}
+
+.footer .links{
+	color:#4e4a47;
+	float:left;
+	font-family:"arial";
+	font-size:15px;
+	padding-left:25px;
+}
+
+.f_logo{
+	width:134px;
+	height:49px;
+	background:url(../images/case/GiLogo.png) no-repeat;
+	display:block;
+	float:right;
+	margin-top:40px;
+}
+
+.line{
+	width:1px;
+	height:50px;
+	background:#dcdbda;
+	float:right;
+	margin:37px 13px 0 0;
+}
+
+.gwantsi_logo{
+	float:right;
+	margin:55px 13px 0 0;
+	display:block;
+	background:url(../images/case/GcLogo.png) no-repeat 0 0;
+	width:148px;
+	height:26px;
+}
+
+
+
+
+
+

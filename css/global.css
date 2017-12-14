@@ -1,0 +1,381 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:400,700,700italic,400italic);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+
+*{
+	margin:0;
+	padding:0;
+}
+img{ 
+	border:0;
+	vertical-align:top;
+}
+ul,li,ol,ul {
+	list-style:none;
+}
+.effect{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+/*------------------index------------------*/
+
+#canvas-bg{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:-2;
+	opacity:0.6;
+}
+	
+#header{
+	overflow:hidden;
+	width:1572px;
+	margin:0 auto;
+	position:relative;
+}
+.headerbody{
+
+	overflow:hidden;
+}
+.headerbody .logo{
+	margin:100px 0;
+	float:left;
+}
+/*.headerbody a b{
+	color:black;
+}*/
+.headerbody .logo a{
+	opacity:0.9;
+/*	width:97px;
+	height:109px;*/
+	font-family:Karla;
+	text-decoration:none;
+	color:#000;
+	font-size:35px;
+	display:block;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+.headerbody .logo a img{
+	width:80px;
+	height:80px;
+}
+.headerbody .logo:hover a{
+	opacity:0.8;
+}
+
+.headerbody ul{
+	overflow:hidden;
+	float:right;
+	margin-top:158px;
+}
+.headerbody ul li{
+	float:left;
+	margin-right:38px;
+}
+.headerbody ul li a{
+	text-decoration:none;
+	font-family:Karla;
+	color:#313131;
+	font-size:24px;
+}
+.headerbody ul li a:hover{
+	color:#9d9d9d;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.heid_menu{
+	display:none;
+	float:right;
+	width:28px;
+	height:22px;
+	margin-top:112px;
+}
+.heid_menu span{
+	display:block;
+	width:28px;
+	height:22px;
+}
+.heid_menu span img{
+	width:100%;
+	height:100%;
+	background-size:cover;
+}
+
+.iphneMenu{
+	width:100%;
+	height:240px;
+	line-height:52px;
+	clear:both;
+	display:none;
+	text-align:center;
+}
+.iphneMenu a{
+	text-decoration:none;
+	font-family:Karla;
+	color:#313131;
+	font-size:22px;
+}
+.iphneMenu a:hover{
+	color:#424242;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.links{
+	float:right;
+	overflow:hidden;
+	position:absolute;
+	top:100px;
+	right:0;
+}
+
+.weixin,.weibo,.music{
+	width:25px;
+	height:25px;
+	float:left;
+	margin-left:20px;
+	opacity:0.9;
+}
+
+.music-ico{
+	animation: spin 3s linear infinite;
+}
+
+.music img{
+	width:100%;
+	height:100%;
+}
+
+@keyframes spin {
+0% {
+   	transform:rotate(0deg);
+ }
+ 100% {
+   	transform:rotate(-360deg);
+ }
+}
+
+.weixin{
+	background:url(../images/weixin.png) no-repeat;
+}
+.weibo{
+	background:url(../images/weibo.png) no-repeat;
+}
+
+.weixin:hover,.weibo:hover{
+	opacity:0.5;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.weixin a,.weibo a{
+	text-indent:-111111px;
+	display:block;
+	height:100%;
+}
+
+
+/*-----------------------------------------*/
+
+#foot{
+	
+	width:1572px;
+	margin:0 auto;
+	height:240px;
+	
+}
+
+#foot p{
+	color:#8e8e8e;
+	font-size:16px;
+	font-family:"arial";
+	float:left;
+	margin-top: 111px;
+}
+#foot a{
+	float:right;
+	width:27px;
+	height:20px;
+	margin-top:111px;
+	margin-left:18px;
+	display:block;
+}
+
+.BackPot{
+	position:fixed;
+	bottom:25px;
+	right:25px;
+	width:36px;
+	height:36px;
+	background:url(../images/back_to2.png) no-repeat;
+	display:none;
+	cursor:pointer;
+}
+.BackPot:hover{
+	background:url(../images/back_to1.png) no-repeat;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+.BackPot a{
+	display:block;
+	font-family:"arial";
+	font-size:16px;
+	text-align:center;
+	line-height:36px;
+	color:#fff;
+	text-decoration:none;	
+}
+
+/*------------------作品详情------------------*/
+.ey{
+	transform: translateY(0);
+}
+.entry{
+	position:fixed;
+	top:-70px;
+	left:0;
+	width:100%;
+	height:70px;
+	background:#fff;
+	z-index:1;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+	
+}
+.entry .a_entry{
+	width:176px;
+	height:100%;
+	margin:0 auto;
+}
+
+.entry .a_entry .Previous{
+	float:left;
+}
+
+.entry .a_entry .list{
+	background:url(../images/list_bg.png) no-repeat;
+	width:16px;
+	height:16px;
+	float:left;
+	margin:28px;
+	overflow:hidden;
+}
+
+.entry .a_entry .next{
+	float:left;
+}
+
+.entry .a_entry a{
+	font-size:22px;
+	height:70px;
+	font-family:Karla;
+	color:#313131;
+	text-decoration:none;
+	line-height:70px;
+}
+.entry .a_entry a:hover{
+	opacity:0.5;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+/*---------------------------------------*/
+
+.works{
+	margin-bottom:100px
+}
+.works img{
+	width:100%;
+	height:100%;
+}
+
+.photo{
+	max-width:750px;
+	margin:0 auto;
+	text-align:center;
+	color:#161616;
+	margin-bottom:100px;
+	font-family:"arial";
+	font-size:14px;
+}
+.photo img{
+	width:100%;
+	height:100%;
+	margin:0 0 20px 0;
+}
+
+@media only screen and (max-width:768px){	
+
+	.headerbody .logo a img{
+		width:70px;
+  		height:70px;
+	}
+	.heid_menu{
+		margin-top:122px;
+	}
+	
+}
+
+@media only screen and (max-width:420px){	
+	
+	.headerbody .logo{
+		margin: 55px 0;
+	}
+	
+	.headerbody .logo a{
+		font-size:28px;
+	}
+	
+	.headerbody .logo a img{
+		width:58px;
+  		height:58px;
+	}
+	
+	.iphneMenu{
+		height: 200px;
+	}
+	
+	.heid_menu{
+		margin-top:73px;
+	}
+	#foot a{
+		display:none;
+	}
+	
+}

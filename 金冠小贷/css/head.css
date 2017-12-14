@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*头部*/
+#whole {
+	min-width:980px;
+	width:auto !important;
+	width:980px;
+	margin:0 auto;
+	min-height:326px;
+	height:auto !important;
+	height:326px;
+}
+#product_sproduct02 .shadow {
+	background:none;
+	width:100%;
+	height: 10px;
+	top:80px;
+	position:absolute;
+	z-index:999;
+}
+#product_sproduct01 .shadow {
+	background:none;
+	width:100%;
+	height: 10px;
+	top:80px;
+	position:absolute;
+	z-index:999;
+}
+
+.shadow {
+	background:url(../images/shadow.png) repeat-x;
+	width:100%;
+	height: 10px;
+	top:80px;
+	position:absolute;
+	z-index:999;
+}
+
+#product_sproduct01 #top {
+	width:100%;
+	background:#ffffff;
+	position:relative;
+}
+
+#product_sproduct02 #top {
+	width:100%;
+	background:#ffffff;
+	position:relative;
+}
+
+#top {
+	width:100%;
+	background:#ffffff;
+	position:fixed;
+}
+#head {
+	width:980px;
+	height:80px;
+	margin:0 auto;
+}
+#head h1 a {
+	display:block;
+	width:262px;
+	height:55px;
+}
+.logo {
+	background:url(../images/LOGO.png) no-repeat;
+	width:262px;
+	height:55px;
+	float:left;
+	display:block;
+	text-indent:-999px;
+	margin-top:9px;
+	cursor:pointer;
+}
+.menu ul li {
+	float:left;
+	margin-left:40px;
+	position:relative;
+	margin-top:26px;
+	cursor:pointer;
+}
+.menu .first-menu {
+	display:block;
+	color:#000;
+	text-decoration:none;
+	font-size:16px;
+	font-weight:bold;
+	padding:0 0 3px 0;
+}
+.menu .second-menu-main {
+	position:absolute;
+	white-space:nowrap;
+	display:none;
+}
+.menu .second-menu {
+	font-size:12px;
+	line-height:22px;
+	color:#565656;
+	font-family:"微软雅黑";
+	margin:5px 8px 0 0;
+	display:inline-block;
+}
+.menu li:hover .second-menu-main {
+	display:block;
+}
+.menu ul li:hover {
+	border-bottom:5px solid #c47321;
+	position:relative;
+}
+.menu .second-menu:hover {
+	color:#c47321;
+}
+
+/*底部*/
+#product_sproduct01 #bottom {
+	width:100%;
+	height:60px;
+	background:#7d4924;
+	margin:0 auto;
+	position:relative;
+}
+#product_sproduct02 #bottom {
+	width:100%;
+	height:60px;
+	background:#7d4924;
+	margin:0 auto;
+	position:relative;
+}
+#bottom {
+	width:100%;
+	height:60px;
+	background:#7d4924;
+	margin:0 auto;
+	position:fixed;
+	bottom:0;
+}
+.bottom_content {
+	width:980px;
+	margin:0 auto;
+}
+.sign {
+	position:relative;
+	top:10px;
+	margin:0 auto;
+	width:415px;
+}
+.copyright {
+	font:12px "微软雅黑";
+	color:#ff9320;
+	float:right;
+	position:relative;
+	top:-20px;
+}

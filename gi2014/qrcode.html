@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://www.g-i.asia/index-qrcode.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GI</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=0.6,user-scalable=no">
+<script src="js/jquery-1.7.2.min.js"></script>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/gi_index.css">
+<script src="js/jquery.masonry.min.js"></script>
+<script language="javascript" src="js/jwplayer.js"></script>
+<script type="text/javascript">jwplayer.key="lwcULutluzYA872LoWcFrslIprd8HvHIuzZU7w==";</script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/global.js"></script>
+
+<script>
+	$(function(){
+	    var lanVal = $("#languageChoose").val();
+	    if(lanVal=="en"){
+	      $(".language-cn").removeClass('cur');
+	      $(".language-en").addClass('cur');
+	    }else{
+	      $(".language-en").removeClass('cur');
+	      $(".language-cn").addClass('cur');
+	    }
+	    var preLoadFun = function(){
+	      var isPreloaderVisible = true,
+	      $preloader = $("#preLoad");
+	      var showSitePreloader = function (_inLink){
+	        $preloader.fadeIn(300,function()  {
+	          isPreloaderVisible = true;
+	          if ( _inLink ) window.location = _inLink;
+	        });
+	      }
+	      var hideSitePreloader =  function (){
+	        if( !isPreloaderVisible )
+	          return;
+	        $preloader.fadeOut(300,function(){
+	          isPreloaderVisible = false;
+	          clearInterval( preloaderInterval );
+	        });
+	      }
+	      var goToContent  = function ( _inLink ){
+	        showSitePreloader( _inLink );
+	      }
+	      var preloaderInterval = setInterval( hideSitePreloader, 400 );
+	      $('a:not([href*="#"],[href*="javascript:;"],[target="_blank"],[target="_top"],[target="_self"],[href^="mailto:"])').click(function(e){
+	        e.preventDefault();
+	        if( $(this).attr('href').indexOf('#') == -1 ){
+	          if( !$(this).hasClass('active') ){
+	            goToContent( $(this).attr('href'));
+	          }
+	        }
+	      });
+	    }
+	    preLoadFun();
+	})
+</script>
+
+
+</head>
+<body onload="init();">
+
+
+<!-- global nav -->
+<!-- global nav -->
+<input type="hidden" value="en" id="languageChoose">
+<div class="nav_areabg" style="width: 1920px;">
+	<div id="nav_area" lan="en" style="width: 1920px;">
+		<!--logo&search-->
+		<div class="search_area">
+			<a id="logo" href="index.html"></a>
+			<div class="search">
+            	<a class="gwantsi_link" target="_blank" href="http://www.gwantsi.com/"></a>
+				<a class="old_gilink" target="_blank" href="http://old.g-i.asia/"></a>
+				<a class="weibo_link" target="_blank" href="http://weibo.com/p/1006061621809804"></a>
+				<a class="weixin_link" target="_blank" href="qrcode.html"></a>
+				<span class="line"></span>
+				<a class="language-en cur" href="javascript:;">EN</a>
+				<span class="lan-line"></span>
+				<a class="language-cn" href="javascript:;">中文</a>
+			</div>
+		</div>
+		<!--/logo&search-->
+		<!-- nav_bottom -->
+		<div class="nav_bottom">
+			<ul class="links">
+				<li><a href="about.html" class="menu_about">About us</a></li>
+				<li><a href="join.html" class="menu_join">Join us</a></li>
+				<li><a href="news.html" class="menu_new">News</a></li>
+				<li><a href="contact.html" class="menu_contact">Contact us</a></li>
+				<li><a href="javascript:;">G-Lab</a></li>
+			</ul>
+			<!-- 筛选链接 -->
+			<div class="sx_link">
+				<span id="tjq" style="top: 50px;"></span>
+				<a href="javascript:;" data="2">Technical</a>
+				<a class="current" href="javascript:;" data="1">Our work</a>
+				<a href="javascript:;" data="3" class="">3D</a>
+			</div>
+			<!-- /筛选链接 -->
+			<div class="right" style="display: block;">
+				G-i.asia<br>
+				are hiring now!				<br>
+				<a href="join.html">Join us &gt;</a>
+			</div>
+		</div>
+        <!-- /nav_bottom -->
+	</div>
+</div>
+<!-- /global nav -->
+<!-- global nav -->
+
+
+
+
+
+
+	<!-- 列表内容 -->
+<div class="list_container" style="width: auto;">
+	<div style="margin:0 auto;position:relative;width:300px;height:300px;">
+	<img src="images/qrcode.jpg">
+</div></div>
+	<!-- /列表内容 -->
+
+
+	<!-- footer -->
+		<!-- footer -->
+	<div class="footer_bg">
+		<div id="footer" style="width: 1200px;">
+			<div class="desc">沪ICP备15017036号</div>
+			<div class="links">
+			© Gi Moving Picture Company2015
+			</div>
+            <a class="f_logo"></a>
+            <span class="line"></span>
+            <a href="http://www.gwantsi.com/" target="_blank" class="gwantsi_logo"></a>
+		</div>
+        
+	</div>
+	<!-- /footer -->
+	<div class="pre-load" id="preLoad" style="display: none;"></div>
+    	<!-- /footer -->
+
+
+
+
+
+
+
+
+
+<script>
+
+function init(){
+
+	$('#container').masonry({
+      itemSelector: '.list_item',
+      columnWidth: 1,
+	  isAnimated:true,
+
+    });
+
+	
+	playtv_onimg();
+	gototop();
+	get_ajaxdata();
+	sx_link_ux();
+
+	
+
+	
+}
+
+
+
+</script>
+
+<style>
+.list_container {min-height: 350px;}
+</style></body></html>

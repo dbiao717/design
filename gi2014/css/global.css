@@ -1,0 +1,48 @@
+/* CSS Document */
+
+
+
+body{ margin:0 auto; font: 12px/26px "宋体",Arial;color:#797779;}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,button,textarea,select,p,span{margin:0;padding:0;}
+div{overflow: hidden }
+img{ border:0; vertical-align:top;}
+ul,li,ol,ul {list-style:none;}
+h1,h2,h3,h4,h5,h6 {font-size:12px; font-weight:normal;}
+a { text-decoration:none;}
+a:visited {background: none}
+a:hover {text-decoration: none}
+a:active {}
+input,button,textarea,select{ font: 12px/26px "宋体",Arial;color:#797779;outline:none;}
+.clear{clear:both;font-size:0px;height:0px;line-height:0px;overflow:hidden;}
+
+
+/* 默认链接颜色 */
+a{outline-style:none;color:#666666;text-decoration:none}
+a:hover{color:#FF6633;}
+
+/*清除链接虚框*/
+a,area {blr:expression(this.onFocus=this.blur()) }  for IE 
+:focus {-moz-outline-style: none; }  for Firefox   
+
+/* 下划线 */
+.unline,.unline a{text-decoration:underline}
+.nounline,.nounline a,.list12 .nounline{text-decoration:none}
+
+/* 通用属性 */
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}/*ie and firefox1.5 updata */
+
+/*文字对齐方式*/
+.txtLeft{text-align:left}
+.txtright{text-align:right}
+.txtCenter{text-align:center}
+
+/*常用方法*/
+.show{display:block}
+.hidden{display:none}
+.hand{cursor:pointer;}
+.fontArial{font-family:'Arial';}
+.b{font-weight:bold;}
+
+

@@ -1,0 +1,215 @@
+
+#container{
+	overflow:hidden;
+}
+
+
+.main{
+	max-width:1572px;
+	margin:0 auto;
+	height:100%;
+}
+.content{
+	margin:0 auto;
+
+}
+.citem{
+	position:relative;
+	width:393px;
+	height:313px;
+	float:left;
+	overflow:hidden;
+}
+
+.citem:hover .bg,.citem:hover span{
+	/*cursor:pointer;*/
+	opacity:1;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+
+.citem img{
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:-1;
+/*	top:50%;
+	left:50%;
+	margin-top:-156px;
+	margin-left:-196px;*/
+	}
+.bg{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:url(../images/bg.png);
+	opacity:0;
+}
+
+.citem span{
+	width:100%;
+	height:100%;
+	opacity:0;
+	position:absolute;
+	text-align:center;
+}
+
+.citem span a{
+	position:relative;
+	cursor:pointer;
+	margin:0 5px;
+	top:50%;
+	margin-top:-27.5px;
+	width:55px;
+	height:55px;
+	display:inline-block;
+}
+.citem span .ico01{
+	background:url(../images/ico01.png) no-repeat;
+}
+.citem span .ico02{
+	background:url(../images/ico02.png) no-repeat;
+}
+
+
+@media only screen and (max-width:1600px){	
+	
+	#header{
+		width:1179px;
+	}
+	
+	.main{
+		max-width:1179px;
+	}
+	
+	#foot{
+		max-width:1179px;
+	}
+}
+@media only screen and (max-width:1200px){	
+	
+	#header{
+		width:960px;
+	}
+	
+	.main{
+		max-width:960px;
+	}
+	
+	.citem{
+		width:480px;
+		height:382px;
+	}
+	
+	#foot{
+		max-width:960px;
+	}
+	
+}
+
+@media only screen and (max-width:1024px){	
+	
+	#header{
+		width:720px;
+	}
+	
+	
+	.main{
+		max-width:720px;
+	}
+	
+	.citem{
+		width:360px;
+		height:287px;
+	}
+	
+	#foot{
+		max-width:720px;
+	}
+	
+}
+@media only screen and (max-width:768px){	
+	
+	#header{
+		width:360px;
+	}
+	
+	.headerbody .heid_menu{
+		display:block;
+	}
+	.headerbody ul{
+		display:none;
+	}
+	
+	.weixin,.weibo,.music{
+		display:none;	
+	}
+	
+	.main{
+		max-width:360px;
+	}
+	
+	.citem{
+		width:360px;
+		height:287px;
+		margin:0 0 20px 0;
+	}
+	
+	#foot{
+		max-width:360px;
+	}
+	
+
+}
+
+@media only screen and (max-width:420px){	
+	
+	#header{
+		width:299px;
+	}
+	.headerbody .heid_menu{
+		display:block;
+	}
+	.headerbody ul{
+		display:none;
+	}
+	
+	.main{
+		max-width:299px;
+	}
+	
+	.citem{
+		width:299px;
+		height:238px;
+		margin:0 0 20px 0;
+	}
+	
+	#foot{
+		max-width:299px;
+	}
+	
+	.main .citem span a{
+		margin:0;
+ 		top:0;
+ 		margin-top:0;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.citem span .ico01{
+		display:none;
+	}
+	.citem span .ico02{
+		opacity:0;
+	}
+
+}
+
+
+
+

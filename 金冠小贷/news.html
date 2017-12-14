@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>金冠新闻</title>
+<link rel="icon"href="images/jinguan.ico"type="image/x-icon">
+<link href="css/head.css" rel="stylesheet" type="text/css" />
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/about.css" rel="stylesheet" type="text/css" />
+<link href="css/page.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/jquery.js"></script>
+<script language="javascript" src="js/global.js"></script>
+</head>
+
+<body id="about_news">
+<div id="whole">
+    <div id="top">
+            <div id="head">
+            <h1 class="logo" title="金冠小贷"><a href="index.html">金冠小贷</a></h1>
+            <div class="menu right">
+                <ul>
+                    <li class="menu_home"><a class="first-menu" href="index.html">首页</a></li>
+                    <li class="menu_about">
+                        <a class="first-menu" href="about.html">关于金冠</a>
+                        <div class="second-menu-main">
+                            <a class="second-menu" href="about.html">金冠简介</a>
+                            <a class="second-menu" href="culture.html">金冠文化</a>
+                            <a class="second-menu" href="news.html">金冠新闻</a>
+                        </div>
+                    </li>
+                    <li class="menu_server">
+                        <a class="first-menu" href="server.html">金冠服务</a>
+                        <div class="second-menu-main">
+                            <a class="second-menu" href="server.html">通用产品</a>
+                            <a class="second-menu" href="sproduct.html">专用产品</a>
+                        </div>
+                    </li>
+                    <li class="menu_sase"><a class="first-menu" href="case.html">成功案例</a></li>
+                    <li class="menu_contactus"><a class="first-menu" href="contactus.html">联系我们</a></li>
+                </ul>
+            </div>
+            </div>     
+        </div>
+        <div class="shadow"></div>
+
+
+    <div id="center" class="center">
+        <div class="content">
+            <ul id="news_cn">
+                <li>
+                <div class="news_title"><h3><a target="_blank" href="list01.html">金冠小贷召开学习总结会</a></h3><div class="time">2014年05月03日</div></div>
+                <div class="news_p_height">5月3日，金冠小贷在成都召开了学习总结会，公司成都员工、部门负责人全体高管参加会议，集团领导张斌、雷芳、叶本固、陈刚参加会议并做了讲话。
+监事长聂绪胜指出了公司目前经营管理过程中存在的问题，并提出了今后工作的要求。<br />
+董事长张天德亲自主持会议并发表了重要讲话。张天德从集团发展的高度和全局出发，高屋建瓴地提出了"实业1/3"、"金融1/3"和"文化1/3"的三个1/3的三足鼎立的宏伟规划。</div>
+                </li>
+                 <li>
+                <div class="news_title"><h3><a target="_blank" href="list01.html">金冠小贷隆重开业</a></h3><div class="time">2013年12月08日</div></div>
+                <div class="news_p_height">12月8日上午10:00，经过半年的紧张筹备，宣汉金冠小额贷款有限公司隆重开业。<br />
+县金融办、县人民银行领导莅临开业仪式，工、农、中、建、邮储银行及达州商业银行、诚民村镇银行等合作银行，上峡煤焦、瀚都酒店、观池集团及部分农户代表等合作客户派出嘉宾参加仪式。</div>
+                </li>
+                 <li>
+                <div class="news_title"><h3><a target="_blank" href="list01.html">金冠小贷开展业务培训</a></h3><div class="time">2013年11月01日日</div></div>
+                <div class="news_p_height">11月1日，金冠小贷在公司会议室开展业务培训。全体员工参加培训活动。<br />
+培训邀请了在国有大型银行长期多年信贷工作具有丰富的专业知识和工作经验的专家和保险公司的精英讲课。公司还特别邀请上海观池文化传媒董事长张斌就企业文化和LOGO设计进行专题讲授。</div>
+                </li>
+                
+            </ul>
+			<div class="new_page" align="center" >
+					<form action="" method="post" name="form1" onsubmit="">
+						<input type="hidden" name="page" id="page" value='<?=$this->page ?>'>
+						<?php require_once global_info::$v_path_client.'/comm/page.phtml'; ?>
+					</form>
+			</div>
+			<script>
+				var tmp_w = $('.pager').width();
+				$('.pager').css('marginLeft',-tmp_w/2+"px");
+			</script>
+        </div>
+    </div>
+   
+    
+    <div id="bottom">
+        <div class="bottom_content">
+            <div class="sign"><img src="images/sign_bj.jpg" height="45" /></div>
+            <div class="copyright">ICP备13012347号</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

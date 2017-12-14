@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#center {
+	width:100%;
+	margin:0 auto;
+	background:#f0dcba;
+	height:769px;
+}
+
+.content h2 {
+	font-size:48px;
+	font-family:"微软雅黑";
+	color:black;
+	margin-bottom:50px;
+	display:block;
+	text-align:left;
+	text-indent:233px;
+	font-weight:bold;
+}
+
+
+.content ul{
+	width:511px;
+	margin:0 auto;
+}
+
+.contact_address {
+	margin-top:24px;
+	font-size:16px;
+	text-indent:57px;
+	font-weight:bold;
+	line-height:40px;
+	font-family:"微软雅黑", "arial";
+	color:#3b3b3b;
+	text-align:left;
+	background:url(../images/Contact_icon01.png) no-repeat 8px 0;
+}
+.contact_phone {
+	margin-top:26px;
+	font-size:16px;
+	text-indent:57px;
+	height:35px;
+	line-height:35px;
+	font-family:"arial";
+	font-weight:bold;
+	text-align:left;
+	color:#3b3b3b;
+	background:url(../images/Contact_icon02.png) no-repeat;
+}
+
+
+/* menu selected*/
+#contactus .menu ul .menu_contactus{
+	border-bottom: 5px solid #c47321; 
+	position:relative;
+}
+

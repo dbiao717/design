@@ -1,0 +1,131 @@
+body { margin:0; padding:0; font-family: "黑体", Tahoma, Geneva, sans-serif; color:#4e4a47; background:#ededed;}
+img { border:0;}
+ul li { list-style:none;}
+body,ul,li,div,dl,dd,dt,img,p,h1,h2,h3 { margin:0; padding:0;}
+ul,li { display:block; list-style:none;}
+.pointer { cursor:pointer}
+.clear { clear:both; height:0; line-height:0; font-size:0;}
+h1,h2,h3 { font-size: inherit; display:inline; font-weight:normal}
+
+
+
+
+/*招聘样式*/
+::selection {
+color:;
+background-color: #b2d3fa;
+}
+::-moz-selection {
+color:;
+background:#b2d3fa;
+}
+
+@media only screen and (max-width:620px){	
+.Photo_Gallery .Small_map {
+position: relative;
+top: 15px;
+right: 6px;
+width: 374px;
+margin: 0 20px;
+}
+.articles_container ul {
+height:266px; overflow:hidden;
+}
+}
+@media only screen and (max-width:1300px){
+#center{ margin:0 50px;}
+}
+@media only screen and (max-width:592px){
+.related_content .articles_container ul li span{position:absolute; left:13px; top:226px;}
+.related_content .articles_container ul li p{position:absolute; left:13px; top:292px;}
+.related_content .articles_container ul li{ width:368px; height:398px;}
+.related_content .articles_container ul{ height:404px;}
+.articles_container ul li:hover{ width:368px; height:398px;}
+.articles_container ul li img{ width:368px; height:201px;}
+}
+
+.center{max-width:1200px; margin:0 auto; overflow:hidden; min-width:380px; position:relative; z-index:9;}
+.detail-header{ padding:100px 0 31px 20px;}
+.title{ font-size:41px; font-family: "微软雅黑",arial; color:#0099cc;}
+
+/*Album*/
+.Photo_Gallery{ width:100%; background:#fff; position:relative; margin:0 auto; }
+.mask{padding:6px 6px 0;}
+.mask img{width:100%; height:100%;}
+.Small_map{ position:absolute; bottom:-73px; right:6px; width:374px;}
+.Small_map .button_left{ float:left; text-decoration:none; line-height:57px; color:#e9e9e9;}
+.Small_map .button_right{ float:right; text-decoration:none; line-height:57px; color:#4e4a47;}
+.Small_map ul{}
+.Small_map ul li{ width:106px; height:57px; background:#e0e0e0; float:left;}
+.Small_map ul li a{ display:block; width:106px; height:57px; text-indent:-11111px;}
+
+#spec-n5{width:352px; height:57px; padding-top:6px; overflow:hidden;}
+#spec-left{  width:10px; height:45px; float:left; cursor:pointer; margin:5px 3px 0 0;}
+#spec-right{ width:10px; height:45px; float:left;cursor:pointer; margin-top:5px;}
+#spec-list{ width:325px; float:left; overflow:hidden; margin:0 5px 0 2px; }
+#spec-list ul li{ float:left; margin:0 2px 0 0; cursor:pointer;}
+#spec-list ul li img{width:106px; height:57px; -webkit-transition:all 0.3s ease-in-out;}
+
+#spec-list{ position:relative; width:322px;height:57px;}
+#spec-list div{ margin-top:0;margin-left:0px; *margin-left:0;}
+
+.list-h{ position:absolute; }
+.list-h li:hover{ background:url(../images/over-img.png) no-repeat; -webkit-transition: all 0.3s ease-in-out;}
+.list-h .video_bj:hover{ background:url(../images/over-video.png) no-repeat; -webkit-transition: all 0.3s ease-in-out;}
+
+
+
+.detail_content{ background:#fff; width:100%; overflow:hidden;}
+.tabs{ margin-top: 32px;}
+.tabs li{ height:60px; font-size:16px; color:#5f5c59; border-right:1px solid #dcdbda; width:68px; line-height:60px; font-family:"arial"; padding:0 25px; text-align:center; background:#fff; position:relative; margin-bottom:-1px;}
+.horizontal_border{padding-bottom:2.75em; border-top:1px solid #dcdbda; margin:0 20px;}
+.tabbed_content{ width:100%; margin:0 auto;}
+.job_offers_list{ float:left;}
+.text_column{ float:left;  margin-bottom:40px;}
+.tabbed_content ul{ width:50%;}
+.tabbed_content li{}
+.tabbed_content li a{ font-family:"arial"; font-size:16px; line-height:40px; color:#83807e; padding-left:26px; -webkit-transition:all 0.3s ease-in-out;}
+.tabbed_content li a:hover{ color:#158fbd;}
+
+.horizontal_border2{ margin:0 20px; border-top:1px solid #dcdbda; padding-bottom:2.75em; clear:both;}
+
+.tags_and_Share{ width:100%; padding-bottom:50px;}
+.tags_and_Share h4{ padding-left:20px; font-family:"宋体"; font-size:16px; color:#83807e;}
+.tags_and_Share ul{ padding:0 0 38px 21px;}
+.tags_and_Share li{ float:left; margin: 0 1.125em 1.125em 0;}
+.tags_and_Share li a{ display:block; text-decoration:none; font-size:16px; color:#48444f; font-family:"arial"; transition:color 0.2s ease-out; padding:6px 15px; border:1px solid #dcdbda;
+ line-height:1em; border-radius:25px;}
+.tags_and_Share li a:hover{ background:#158fbd; color:#fff; border:solid 1px #158fbd;}
+
+
+.related_content{ width:100%; }
+.related_content h3{width:1000px; display:block; margin:72px 0 18px 20px; font-family:"微软雅黑","arial"; font-size:25px; color:#4e4a47; }
+.articles_container{ width:100%}
+.articles_container ul{ height:260px; overflow:hidden;}
+.articles_container ul li:hover{ background:#0099cc; z-index:10000; color:#fff; -webkit-transition: all 0.3s ease-in-out; }
+.articles_container ul li{ float:left; width:234px; height:260px; position:relative; background:#fff; padding:6px 6px 0 6px; margin-right:-8px;}
+.articles_container ul li .Click_effect{display:block; width:234px; height:260px;}
+.articles_container ul li span{ position:absolute; left:13px; top:148px;}
+.articles_container ul li span a{ text-decoration:none; font-size:14px; color:#716e6c; font-family:"宋体"; font-family:"arial";}
+.articles_container ul li:hover span a{ color:#ffffff;}
+.articles_container ul li p{position:absolute; left:13px; top:216px; background:url(../images/gi_04.png) no-repeat right 8px; padding-right:22px; height:15px;}
+.articles_container ul li:hover p{ background:url(../images/tb2_tp.png) no-repeat right 8px;}
+.articles_container ul li p a{text-decoration:none; font-size:16px; color:#0099cc; font-family:"arial";}
+.articles_container ul li:hover p a{ color:#fff;}
+
+#clear{ clear:both; margin-bottom:120px;}
+
+
+
+/* menu selected*/
+
+#body_joinus .menu_join{
+	color:#09c;
+	}
+
+
+
+
+
+
+

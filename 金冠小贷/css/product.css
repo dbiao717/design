@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* CSS Document */
+
+#wrapper {
+	overflow:hidden;
+}
+#wrapper-small{
+	height:400px;
+	overflow:hidden;
+	}
+
+
+.bannerbox {
+	width:100%;
+	height:639px;
+	overflow:hidden;
+	margin:0px auto;
+	background:#f0dcb9;
+}
+#focus {
+	width:100%;
+	height:639px;
+	clear:both;
+	overflow:hidden;
+	position:relative;
+	float:left;
+}
+#focus img {
+	height:639px;
+	width:100%;
+}
+#focus ul {
+	height:639px;
+	float:left;
+	position:absolute;
+	clear:both;
+}
+#focus ul li {
+	float: left;
+	width:50%;
+	height:639px;
+	overflow: hidden;
+	position: relative;
+}
+#focus .preNext {
+	width:50%;
+	height:639px;
+	position: absolute;
+	top: 0px;
+	cursor: pointer;
+}
+#focus .pre {
+	left: 0;
+	background:url(../images/sprite.png) no-repeat left center;
+}
+#focus .next {
+	right: 0;
+	background:url(../images/sprite1.png) no-repeat right center;
+}
+#center {
+	width:100%;
+	margin:0 auto;
+	background:#f0dcba;
+}
+.content {
+	width:980px;
+	margin:0 auto;
+}
+
+
+/* menu selected*/
+#product_sproduct01 .menu ul .menu_server{
+	border-bottom: 5px solid #c47321; 
+	position:relative;
+}
+#product_sproduct02 .menu ul .menu_server{
+	border-bottom: 5px solid #c47321; 
+	position:relative;
+}
+
+
+
+/* product_sproduct01 */
+#product_sproduct01 .content h2 {
+	padding:66px 0 45px 0;
+	display:block;
+	text-align:center;
+	font-weight:bold;
+	font-size:36px;
+	color:black;
+	text-align:center;
+	letter-spacing:12px;
+}
+#product_sproduct01 .content p {
+	font-weight:bold;
+	font-size:18px;
+	color:black;
+	line-height:36px;
+	text-align:center;
+	letter-spacing:5px
+}
+#product_sproduct01 .content h3 {
+	font-weight:bold;
+	color:#c47321;
+	font-size:18px;
+	text-align:center;
+	display:block;
+	margin:24px 0 55px 0;
+	letter-spacing:5px;
+}
+#product_sproduct01 .content span {
+	display:block;
+	height:115px;
+	width:980px;
+	text-align:right;
+}
+#product_sproduct01 .content span a {
+	font-size:16px;
+	color:#c57626;
+	font-family:"宋体";
+	font-weight:bold;
+}
+
+/* product_sproduct02 */
+
+#product_sproduct02 .content h2 {
+	font-size:36px;
+	color:black;
+	padding:66px 0 45px 0;
+	display:block;
+	text-align:center;
+	font-weight:bold;
+	letter-spacing:12px
+}
+#product_sproduct02 .content ul {
+	display:block;
+	text-align:center;
+}
+#product_sproduct02 .content ul li {
+	padding-bottom:45px;
+}
+#product_sproduct02 .content ul li h3 {
+	font-size:18px;
+	color:black;
+	font-weight:bold;
+	letter-spacing:5px;
+	margin-bottom:10px;
+	display:block;
+}
+#product_sproduct02 .content ul li p {
+	font-size:14px;
+	color:black;
+	line-height:30px;
+	letter-spacing:3px;
+	line-height:22px;
+}
+#product_sproduct02 .content span {
+	display:block;
+	height:65px;
+	width:980px;
+	text-align:right;
+}
+#product_sproduct02 .content span a {
+	font-size:16px;
+	color:#c57626;
+	font-family:"宋体";
+	font-weight:bold;
+}
+
+
+
+
